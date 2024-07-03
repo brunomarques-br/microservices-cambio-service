@@ -30,16 +30,4 @@ public class Cambio implements Serializable {
     private BigDecimal convertedValue;
     @Transient
     private String environment;
-
-    public Cambio() {
-    }
-
-    public Cambio(Long id, String from, String to, BigDecimal conversionFactor, BigDecimal convertedValue, String environment) {
-        this.id = id;
-        this.from = from;
-        this.to = to;
-        this.conversionFactor = conversionFactor;
-        this.convertedValue = convertedValue;
-        this.environment = environment;
-    }
 }
