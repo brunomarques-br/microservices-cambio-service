@@ -17,7 +17,7 @@ public class CambioController {
 
 
     @GetMapping("/cambio/{amount}/{from}/{to}")
-    public Cambio getCambio(@PathVariable String amount, @PathVariable String from, @PathVariable String to) {
+    public Cambio getCambio(@PathVariable Double amount, @PathVariable String from, @PathVariable String to) {
         return cambioService.getCambio(amount, from, to);
     }
 }
